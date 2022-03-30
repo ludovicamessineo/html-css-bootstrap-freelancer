@@ -26,7 +26,8 @@ h1, h2, h3 {
 }
 
 section {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -36,20 +37,30 @@ section {
 
 .line {
     display: inline-block;
-    width: 90px;
-    border: 1px solid white;
+    width: 50px;
+    border: 1.5px solid white;
     border-radius: 1px;
     vertical-align: middle;
 }
 
 .line-dark {
-    border: 1px solid #2c3e51;
+    border: 1.5px solid #2c3e51;
 }
 
 .star {
-    padding: 0 1rem;
+    padding: 0 .3rem;
     font-size: 1.2rem;
     vertical-align: middle;
+}
+
+@media all and (min-width: 768px) {
+    .line, .line-dark {
+        width: 100px;
+    }
+
+    .star {
+        padding: 0 1rem;
+    }
 }
 
 /* HEADER */
@@ -105,7 +116,7 @@ header {
     color: white;
 }
 
-.first-img {
+.avatar-img {
     width: 180px;
     margin: 0 auto;
     padding-bottom: .4rem;
